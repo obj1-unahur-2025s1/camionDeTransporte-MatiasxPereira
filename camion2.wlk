@@ -1,7 +1,7 @@
 object camion {
     const carga = []
 
-    method cargar(unaCosa) {carga.add(unaCosa) unaCosa.consecuenciaDeLaCarga()}
+    method cargar(unaCosa) {carga.add(unaCosa)}
     method descargar(unaCosa) {carga.remove(unaCosa)}
     method pesoTotal() = 1000 + self.cargaTotal()
     method cargaTotal() = carga.sum({c => c.peso()}) 
